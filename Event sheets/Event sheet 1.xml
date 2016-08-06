@@ -2,5 +2,48 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="2091306129470413">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9362288395240523" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="422301635474183" type="Laser" />
+            </actions>
+        </event-block>
+        <event-block sid="6263644463222538">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7480761904224969" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="6360530053024788" type="Ship">
+                    <param id="0" name="Object">Laser</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3467210089273374" type="Ship">
+                    <param id="0" name="Object">Laser</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9247844210560608" type="Ship">
+                    <param id="0" name="Object">Laser</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5994786799264565">
+            <conditions>
+                <condition id="-18" name="On created" sid="8970252086787769" type="Laser" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="9431124133043158" type="Laser">
+                    <param id="0" name="Angle">Ship.Angle </param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

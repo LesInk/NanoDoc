@@ -10,9 +10,14 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -38,13 +43,118 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="7836897126511305">
+        <object-type name="Ship" sid="7836897126511305">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="6889415494140231">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="2502756803884534">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5157536998595994" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship0.png">
+                        <image-point name="Imagepoint 1" x="0.655405" y="0.222222" />
+                        <image-point name="Imagepoint 2" x="0.682432" y="0.755556" />
+                        <image-point name="Imagepoint 3" x="0.972973" y="0.455556" />
+                        <collision-poly>
+                            <point x="0.831081" y="0.277778" />
+                            <point x="1" y="0.5" />
+                            <point x="0.810811" y="0.688889" />
+                            <point x="0.135135" y="0.777778" />
+                            <point x="0.0540541" y="0.5" />
+                            <point x="0.128378" y="0.211111" />
+                            <point x="0.5" y="0.211111" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Brain" sid="9594714044693069">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8185496886206748" speed="5">
+                    <frame duration="1" hotspotX="0.500392" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\brain0.png">
+                        <collision-poly>
+                            <point x="0.137823" y="0.246499" />
+                            <point x="0.499608" y="0.0238095" />
+                            <point x="0.894283" y="0.189076" />
+                            <point x="1" y="0.5" />
+                            <point x="0.891151" y="0.805322" />
+                            <point x="0.499608" y="0.97479" />
+                            <point x="0.0759593" y="0.864146" />
+                            <point x="0.0109632" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Throat" sid="9574688368774421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5585869111465495" speed="5">
+                    <frame duration="1" hotspotX="0.500556" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\throat0.png">
+                        <collision-poly>
+                            <point x="0.290323" y="0.446918" />
+                            <point x="0.499444" y="0.0205479" />
+                            <point x="0.76307" y="0.364726" />
+                            <point x="0.761958" y="0.5" />
+                            <point x="0.954394" y="0.929795" />
+                            <point x="0.499444" y="0.998288" />
+                            <point x="0.0144605" y="0.97774" />
+                            <point x="0.275862" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spine" sid="3786982759890423">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5446913553934276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\spine0.png">
+                        <collision-poly>
+                            <point x="0.101796" y="0.0796253" />
+                            <point x="0.5" y="0" />
+                            <point x="0.949102" y="0.0398126" />
+                            <point x="0.856287" y="0.498829" />
+                            <point x="0.772455" y="0.822014" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0479042" y="0.962529" />
+                            <point x="0.155689" y="0.498829" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Laser" sid="5259714855378964">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8234570271995564">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9779926450974457" speed="5">
+                    <frame duration="1" hotspotX="0.501188" hotspotY="0.508475" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\laser0.png">
+                        <collision-poly>
+                            <point x="0.0427553" y="0.305085" />
+                            <point x="0.498812" y="0" />
+                            <point x="0.957245" y="0.305085" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.957245" y="0.694915" />
+                            <point x="0.498812" y="1" />
+                            <point x="0.0427553" y="0.694915" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="6069682389857544">
+            <plugin id="Keyboard" />
         </object-type>
     </object-folder>
     <families />
@@ -54,7 +164,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
