@@ -249,6 +249,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="4368568475326195">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2632763548265107" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.503937" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\whitebloodcell0.png">
+                        <collision-poly>
+                            <point x="0.20155" y="0.204724" />
+                            <point x="0.496124" y="0.0866142" />
+                            <point x="0.79845" y="0.204724" />
+                            <point x="0.930233" y="0.496063" />
+                            <point x="0.79845" y="0.795276" />
+                            <point x="0.496124" y="0.913386" />
+                            <point x="0.20155" y="0.795276" />
+                            <point x="0.0620155" y="0.496063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
