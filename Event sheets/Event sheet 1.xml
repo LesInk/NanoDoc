@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Slow" sid="8058797085550392" static="0" type="number">0</variable>
         <event-block sid="2091306129470413">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="9362288395240523" type="System" />
@@ -88,6 +89,33 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="3388249078931004" type="Laser" />
+            </actions>
+        </event-block>
+        <event-block sid="1630881896931519">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8797715725001515" type="WhiteBloodCell">
+                    <param id="0" name="Object">Ship</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7876629451122822" type="System">
+                    <param id="0" name="Variable">Slow</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1163147790246608">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1064940791217919" type="System">
+                    <param id="0" name="Variable">Slow</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="3" name="Set speed" sid="4983677587624536" type="Ship">
+                    <param id="0" name="Speed">ship.Car.speed - Slow*0.5</param>
+                </action>
             </actions>
         </event-block>
     </events>
