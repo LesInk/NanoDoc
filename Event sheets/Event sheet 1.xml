@@ -16,12 +16,21 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="0" name="Call function" sid="4113161215215243" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6263644463222538">
             <conditions>
                 <condition id="0" name="On key pressed" sid="7480761904224969" type="Keyboard">
                     <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2017830383371349" type="NumShots">
+                    <param id="0" name="Instance variable">shots</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -45,6 +54,10 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Add to" sid="7238863864383787" type="NumShots">
+                    <param id="0" name="Instance variable">shots</param>
+                    <param id="1" name="Value">-1</param>
                 </action>
             </actions>
         </event-block>
@@ -113,6 +126,10 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="3388249078931004" type="Laser" />
+                <action id="0" name="Call function" sid="2771283680306397" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1630881896931519">
@@ -142,20 +159,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="367925210277918">
-            <conditions>
-                <condition id="3" name="Compare frame" sid="1950096403037361" type="cancer">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-7" name="Set size" sid="4672474203981339" type="cancer">
-                    <param id="0" name="Width">self.health*2+12-8*cos(360*time)</param>
-                    <param id="1" name="Height">self.health*2+12-8*cos(360*time)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="2877487268120378">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="6265686964231796" type="Laser">
@@ -176,6 +179,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="367925210277918">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="1950096403037361" type="cancer">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="4672474203981339" type="cancer">
+                    <param id="0" name="Width">self.health*2+12-8*cos(360*time)</param>
+                    <param id="1" name="Height">self.health*2+12-8*cos(360*time)</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="2901254188152945">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="5010955583301663" type="cancer">
@@ -191,6 +208,69 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Add to" sid="7222619129598967" type="NumSites">
+                    <param id="0" name="Instance variable">numSites</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Call function" sid="5707206227724585" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7105572128008338">
+            <conditions>
+                <condition id="0" name="On function" sid="4805788320791851" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5199711739446334" type="NumSites">
+                    <param id="0" name="Text">&quot;Num Sites: &quot; &amp; str(NumSites.numSites)</param>
+                </action>
+                <action id="0" name="Set text" sid="6068218593374838" type="NumShots">
+                    <param id="0" name="Text">&quot;Num Shots: &quot; &amp; str(NumShots.shots)</param>
+                </action>
+                <action id="0" name="Set text" sid="4006387497614041" type="Health">
+                    <param id="0" name="Text">&quot;Health: &quot; &amp; Health.percent</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="125116007715235">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4169766604184652" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5224618370791267" type="NumShots">
+                    <param id="0" name="Instance variable">shots</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5414296494377189" type="Audio">
+                    <param id="0" name="Audio file">no_shot</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5613968120553247">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9754054832592571" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="5071329492175919" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Value">max(Health.percent - NumSites.numSites, 0)</param>
+                </action>
+                <action id="0" name="Call function" sid="2791455056023336" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>

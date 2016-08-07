@@ -11,8 +11,10 @@
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -379,6 +381,27 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="NumSites" sid="9878017746883077">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="numSites" sid="4369058454793521" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="UpdateHUD" sid="1598632730767984">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="NumShots" sid="9700243138423768">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="shots" sid="737945655763495" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Health" sid="5462095176320287">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="percent" sid="9087498671600908" type="number" />
+            </instance-variables>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -403,6 +426,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="UpdateHUD" uid="69" />
     </global-instances>
     <sounds-folder>
         <file name="destroy_cancer.m4a" />
@@ -419,6 +443,8 @@
         <file name="yahoo.ogg" />
         <file name="heartbeat.m4a" />
         <file name="heartbeat.ogg" />
+        <file name="no_shot.m4a" />
+        <file name="no_shot.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
