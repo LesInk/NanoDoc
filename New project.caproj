@@ -185,6 +185,50 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="5971878149485559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2802271606150811" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\brain2.png">
+                        <collision-poly>
+                            <point x="0.0133334" y="0.143333" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.866667" y="0.133333" />
+                            <point x="0.33" y="0.0766671" />
+                            <point x="0.32" y="0.251667" />
+                            <point x="0.406667" y="0.28" />
+                            <point x="0.28" y="0.323334" />
+                            <point x="0.263334" y="0.196667" />
+                            <point x="0.0633336" y="0.181667" />
+                            <point x="0.0566669" y="0.31" />
+                            <point x="0.0566667" y="0.42" />
+                            <point x="0" y="0.386667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="5363056865499044">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9825420464629041">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7747226720599202" speed="5">
+                    <frame duration="1" hotspotX="3" hotspotY="0.521739" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7216988771652994">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6941117946872791" speed="5">
+                    <frame duration="1" hotspotX="3" hotspotY="0.521739" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
