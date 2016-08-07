@@ -34,6 +34,12 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">3</param>
                 </action>
+                <action id="0" name="Play" sid="9028254403514555" type="Audio">
+                    <param id="0" name="Audio file">laser1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5994786799264565">
@@ -54,6 +60,12 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="5303749241621307" type="Laser" />
+                <action id="0" name="Play" sid="8610371854581576" type="Audio">
+                    <param id="0" name="Audio file">small_hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8159302624659904">
@@ -78,6 +90,12 @@
             <actions>
                 <action id="-9" name="Destroy" sid="7248239173824873" type="Laser" />
                 <action id="-9" name="Destroy" sid="5463697634667356" type="barrier" />
+                <action id="0" name="Play" sid="7265655859549025" type="Audio">
+                    <param id="0" name="Audio file">soft_dissolve</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9820164424186872">
@@ -115,6 +133,58 @@
             <actions>
                 <action behavior="Car" id="3" name="Set speed" sid="4983677587624536" type="Ship">
                     <param id="0" name="Speed">ship.Car.speed - Slow*0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="367925210277918">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="1950096403037361" type="cancer">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="4672474203981339" type="cancer">
+                    <param id="0" name="Width">self.health*2+12-8*cos(360*time)</param>
+                    <param id="1" name="Height">self.health*2+12-8*cos(360*time)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2877487268120378">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6265686964231796" type="Laser">
+                    <param id="0" name="Object">cancer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6924518480488803" type="cancer">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">self.health-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1996880410770854" type="Laser" />
+                <action id="0" name="Play" sid="655164561553951" type="Audio">
+                    <param id="0" name="Audio file">destroy_cancer</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2901254188152945">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5010955583301663" type="cancer">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1240033399474707" type="cancer" />
+                <action id="0" name="Play" sid="325085969686916" type="Audio">
+                    <param id="0" name="Audio file">yahoo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
