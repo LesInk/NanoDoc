@@ -45,5 +45,28 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6603554497791275">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9991437258251716" type="Laser">
+                    <param id="0" name="Object">edge</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5303749241621307" type="Laser" />
+            </actions>
+        </event-block>
+        <event-block sid="8159302624659904">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1109626739433971" type="Ship">
+                    <param id="0" name="Object">flow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="4333509078436286" type="Ship">
+                    <param id="0" name="Angle">flow.Angle</param>
+                    <param id="1" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
