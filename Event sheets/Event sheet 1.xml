@@ -64,8 +64,30 @@
             <actions>
                 <action id="-23" name="Move at angle" sid="4333509078436286" type="Ship">
                     <param id="0" name="Angle">flow.Angle</param>
-                    <param id="1" name="Distance">5</param>
+                    <param id="1" name="Distance">1.5</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="4633341134467692">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2506203047205184" type="Laser">
+                    <param id="0" name="Object">barrier</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7248239173824873" type="Laser" />
+                <action id="-9" name="Destroy" sid="5463697634667356" type="barrier" />
+            </actions>
+        </event-block>
+        <event-block sid="9820164424186872">
+            <conditions>
+                <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="2356147718609632" type="Laser">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Distance">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3388249078931004" type="Laser" />
             </actions>
         </event-block>
     </events>
