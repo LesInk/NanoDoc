@@ -49,6 +49,9 @@
     <object-folder>
         <object-type name="Ship" sid="7836897126511305">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="firing" sid="1691936761601089" type="string" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Car" sid="6889415494140231">
                     <behavior id="Car" />
@@ -59,18 +62,92 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5157536998595994" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship0.png">
-                        <image-point name="Imagepoint 1" x="0.655405" y="0.222222" />
-                        <image-point name="Imagepoint 2" x="0.682432" y="0.755556" />
-                        <image-point name="Imagepoint 3" x="0.972973" y="0.455556" />
+                    <frame duration="1" hotspotX="0.501341" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship1.png">
+                        <image-point name="Imagepoint 1" x="0.22252" y="0.34399" />
+                        <image-point name="Imagepoint 2" x="0.756032" y="0.317136" />
+                        <image-point name="Imagepoint 3" x="0.455764" y="0.0268542" />
                         <collision-poly>
-                            <point x="0.831081" y="0.277778" />
-                            <point x="1" y="0.5" />
-                            <point x="0.810811" y="0.688889" />
-                            <point x="0.135135" y="0.777778" />
-                            <point x="0.0540541" y="0.5" />
-                            <point x="0.128378" y="0.211111" />
-                            <point x="0.5" y="0.211111" />
+                            <point x="0.277778" y="0.168919" />
+                            <point x="0.5" y="0" />
+                            <point x="0.688889" y="0.189189" />
+                            <point x="0.777778" y="0.864865" />
+                            <point x="0.5" y="0.945946" />
+                            <point x="0.211111" y="0.871622" />
+                            <point x="0.211111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Startmoving" pingpong="0" repeatcount="0" repeatto="0" sid="1265862986133498" speed="7">
+                    <frame duration="1" hotspotX="0.481183" hotspotY="0.486275" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship2.png">
+                        <collision-poly>
+                            <point x="0.384409" y="0.813072" />
+                            <point x="0" y="0.500654" />
+                            <point x="0.384409" y="0.186928" />
+                            <point x="0.5" y="0.075817" />
+                            <point x="0.456989" y="0.264052" />
+                            <point x="0.959677" y="0.500654" />
+                            <point x="0.451613" y="0.733333" />
+                            <point x="0.5" y="0.926797" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501341" hotspotY="0.49931" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501341" hotspotY="0.499157" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.400442" hotspotY="0.467532" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.396896" hotspotY="0.502564" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="shooting" pingpong="0" repeatcount="1" repeatto="0" sid="9249251652264496" speed="5">
+                    <frame duration="1" hotspotX="0.501085" hotspotY="0.497436" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship8.png">
+                        <collision-poly>
+                            <point x="0.0845987" y="0.8" />
+                            <point x="0" y="0.502564" />
+                            <point x="0.0911063" y="0.215385" />
+                            <point x="0.498915" y="0.0051282" />
+                            <point x="0.921909" y="0.184615" />
+                            <point x="0.841649" y="0.502564" />
+                            <point x="0.91757" y="0.805128" />
+                            <point x="0.498915" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Moving" pingpong="0" repeatcount="1" repeatto="0" sid="2461289400608867" speed="5">
+                    <frame duration="1" hotspotX="0.501109" hotspotY="0.497436" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\ship6.png">
+                        <collision-poly>
+                            <point x="0.0864745" y="0.8" />
+                            <point x="0" y="0.502564" />
+                            <point x="0.0931264" y="0.215385" />
+                            <point x="0.498891" y="0.0051282" />
+                            <point x="0.924612" y="0.174359" />
+                            <point x="0.789357" y="0.502564" />
+                            <point x="0.920177" y="0.815385" />
+                            <point x="0.498891" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Start" sid="3450378846437581" static="0" type="number">0</variable>
         <variable constant="0" name="Slow" sid="8058797085550392" static="0" type="number">0</variable>
         <event-block sid="2091306129470413">
             <conditions>
@@ -58,6 +59,10 @@
                 <action id="-11" name="Add to" sid="7238863864383787" type="NumShots">
                     <param id="0" name="Instance variable">shots</param>
                     <param id="1" name="Value">-1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3262725827721301" type="Ship">
+                    <param id="0" name="Animation">&quot;shooting&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -271,6 +276,57 @@
                 <action id="0" name="Call function" sid="2791455056023336" type="UpdateHUD">
                     <param id="0" name="Name">&quot;update&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7580915014648393">
+            <conditions>
+                <condition behavior="Car" id="0" name="Is moving" sid="5272137913974909" type="Ship" />
+                <condition id="-14" name="Compare variable" sid="9388894253375434" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2783388319202226" type="Ship">
+                    <param id="0" name="Animation">&quot;moving&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9467389117797114" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2521819266794051">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6336102221630075" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="9110040877693316" type="Ship">
+                    <param id="0" name="Animation">&quot;shooting&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4289291242646196" type="Ship">
+                    <param id="0" name="Animation">&quot;Moving&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8589557400871165">
+            <conditions>
+                <condition id="4" name="On finished" sid="4526698827374707" type="Ship">
+                    <param id="0" name="Animation">&quot;shooting&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7120935369661206" type="Ship">
+                    <param id="0" name="Animation">&quot;Moving&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
