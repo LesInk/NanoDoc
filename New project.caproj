@@ -361,6 +361,24 @@
         <object-type name="Audio" sid="6497909739656402">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="syringe" sid="5890535305349554">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4003245532931336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016_SerenityForge\NanoDoc\Assets\syringe.png">
+                        <collision-poly>
+                            <point x="0.395" y="0.5" />
+                            <point x="0.07" y="0.07" />
+                            <point x="0.5" y="0.41" />
+                            <point x="0.535" y="0.465" />
+                            <point x="0.59" y="0.5" />
+                            <point x="0.97" y="0.97" />
+                            <point x="0.5" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -399,6 +417,8 @@
         <file name="soft_dissolve.ogg" />
         <file name="yahoo.m4a" />
         <file name="yahoo.ogg" />
+        <file name="heartbeat.m4a" />
+        <file name="heartbeat.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

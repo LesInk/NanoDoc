@@ -10,6 +10,12 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="422301635474183" type="Laser" />
+                <action id="0" name="Play" sid="751180783361592" type="Audio">
+                    <param id="0" name="Audio file">heartbeat</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6263644463222538">
