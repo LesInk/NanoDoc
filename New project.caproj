@@ -600,6 +600,25 @@
         <object-type name="Mouse" sid="1870431461911133">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="Sprite" sid="2363375677886705">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2930895622003899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016_SerenityForge\NanoDoc\Assets\eyeball.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.169811" />
+                            <point x="0.5" y="0.00471698" />
+                            <point x="0.800781" y="0.240566" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.800781" y="0.759434" />
+                            <point x="0.5" y="0.995283" />
+                            <point x="0.140625" y="0.830189" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -611,8 +630,8 @@
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="93" />
-        <global-instance type="Audio" uid="94">
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Audio" uid="59">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -626,9 +645,9 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="UpdateHUD" uid="95" />
+        <global-instance type="UpdateHUD" uid="69" />
         <global-instance type="Mouse" uid="96" />
-        <global-instance type="Mouse" uid="96" />
+        <global-instance type="Mouse" uid="124" />
     </global-instances>
     <sounds-folder>
         <file name="destroy_cancer.m4a" />
