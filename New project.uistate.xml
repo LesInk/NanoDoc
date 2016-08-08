@@ -10,8 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
+        <layout order="0">Layout 1</layout>
+        <layout active="1" order="2">Layout 2</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
+        <event-sheet order="3">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -36,7 +38,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/edge/" />
         <folder expanded="1" path="animation-folder/flow/" />
         <folder expanded="1" path="animation-folder/barrier/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/WhiteBloodCell/" />
@@ -45,5 +46,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/syringe/" />
         <folder expanded="1" path="animation-folder/WhiteBloodCell2/" />
         <folder expanded="1" path="animation-folder/c5/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/BrainLines/" />
+        <folder expanded="1" path="animation-folder/menu/" />
+        <folder expanded="1" path="animation-folder/start/" />
+        <folder expanded="1" path="animation-folder/startbox/" />
     </folders-expanded>
 </c2uistate>

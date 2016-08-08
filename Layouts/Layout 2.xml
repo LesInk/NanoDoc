@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 2</name>
-    <sid>4851671365170747</sid>
+    <sid>5186132364928984</sid>
     <event-sheet>Event sheet 2</event-sheet>
     <size>
         <width>1708</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="158895017640109">
+        <layer name="Layer 0" sid="8929632384620256">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite5" uid="72">
+                <instance type="menu" uid="93">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -40,7 +40,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>427</x>
-                        <y>239</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>1025</width>
                         <height>576</height>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Start" uid="73">
+                <instance type="start" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -64,8 +64,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>443</x>
-                        <y>358</y>
+                        <x>472</x>
+                        <y>379</y>
                         <z>0</z>
                         <width>100</width>
                         <height>15</height>
@@ -76,7 +76,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite6" uid="75">
+                <instance type="startbox" uid="95">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -86,14 +86,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>430.504180908</x>
-                        <y>356</y>
+                        <x>462</x>
+                        <y>366</y>
                         <z>0</z>
-                        <width>135</width>
-                        <height>44</height>
+                        <width>121</width>
+                        <height>43</height>
                         <depth>0</depth>
-                        <hotspotX>0.479338855</hotspotX>
-                        <hotspotY>0.510638297</hotspotY>
+                        <hotspotX>0.431279629</hotspotX>
+                        <hotspotY>0.139534891</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

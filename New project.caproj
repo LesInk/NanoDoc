@@ -548,15 +548,32 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Start" sid="6670023157232672">
+        <object-type name="menu" sid="5326984533656342">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9228376324406454" speed="5">
+                    <frame duration="1" hotspotX="0.500488" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\menu.png">
+                        <collision-poly>
+                            <point x="0.0829268" y="0.147569" />
+                            <point x="0.499512" y="0.0833333" />
+                            <point x="0.917073" y="0.147569" />
+                            <point x="0.917073" y="0.852431" />
+                            <point x="0.499512" y="0.916667" />
+                            <point x="0.0829268" y="0.852431" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="start" sid="1311990820628001">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Flash" sid="6213992550947261">
+                <behavior-type name="Flash" sid="7708199007972717">
                     <behavior id="Flash" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3322358082529834" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1433636133262947" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\start.png">
                         <collision-poly>
                             <point x="0.01" y="0.0666667" />
@@ -572,16 +589,16 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Mouse" sid="8175302128059634">
-            <plugin id="Mouse" />
-        </object-type>
-        <object-type name="Sprite6" sid="9922862892130259">
+        <object-type name="startbox" sid="9160122050693079">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7198547613411675" speed="5">
-                    <frame duration="1" hotspotX="0.479339" hotspotY="0.510638" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3351429323589296" speed="5">
+                    <frame duration="1" hotspotX="0.43128" hotspotY="0.139535" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="1870431461911133">
+            <plugin id="Mouse" />
         </object-type>
     </object-folder>
     <families />
@@ -610,6 +627,7 @@
             </properties>
         </global-instance>
         <global-instance type="UpdateHUD" uid="95" />
+        <global-instance type="Mouse" uid="96" />
         <global-instance type="Mouse" uid="96" />
     </global-instances>
     <sounds-folder>
