@@ -3,29 +3,29 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
-        <event-block sid="4718871087122038">
+        <event-block sid="7119012014018592">
             <conditions>
-                <condition id="6" name="On object clicked" sid="3005843024869483" type="Mouse">
+                <condition id="6" name="On object clicked" sid="6268011736154035" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite6</param>
+                    <param id="2" name="Object clicked">start</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="6603756841800105" type="System">
+                <action id="-25" name="Go to layout (by name)" sid="7686311729979431" type="System">
                     <param id="0" name="Layout">&quot;Layout 1&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9239459153310893">
+        <event-block sid="6544546377479887">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="1938588569988793" type="System" />
+                <condition id="-2" name="On start of layout" sid="1281471746316754" type="System" />
             </conditions>
             <actions>
-                <action behavior="Flash" id="0" name="Flash" sid="7245757865170871" type="Start">
+                <action behavior="Flash" id="0" name="Flash" sid="4783062395159058" type="start">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">100</param>
+                    <param id="2" name="Duration">1000</param>
                 </action>
             </actions>
         </event-block>

@@ -13,12 +13,14 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -546,13 +548,67 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="menu" sid="5326984533656342">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9228376324406454" speed="5">
+                    <frame duration="1" hotspotX="0.500488" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\menu.png">
+                        <collision-poly>
+                            <point x="0.0829268" y="0.147569" />
+                            <point x="0.499512" y="0.0833333" />
+                            <point x="0.917073" y="0.147569" />
+                            <point x="0.917073" y="0.852431" />
+                            <point x="0.499512" y="0.916667" />
+                            <point x="0.0829268" y="0.852431" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="start" sid="1311990820628001">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="7708199007972717">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1433636133262947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\start.png">
+                        <collision-poly>
+                            <point x="0.01" y="0.0666667" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.925" y="0.5" />
+                            <point x="0.925" y="0.5" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.005" y="0.966667" />
+                            <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="startbox" sid="9160122050693079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3351429323589296" speed="5">
+                    <frame duration="1" hotspotX="0.43128" hotspotY="0.139535" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="1870431461911133">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
@@ -571,6 +627,7 @@
             </properties>
         </global-instance>
         <global-instance type="UpdateHUD" uid="69" />
+        <global-instance type="Mouse" uid="96" />
     </global-instances>
     <sounds-folder>
         <file name="destroy_cancer.m4a" />
