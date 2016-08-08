@@ -553,7 +553,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9228376324406454" speed="5">
-                    <frame duration="1" hotspotX="0.500488" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\menu.png">
+                    <frame duration="1" hotspotX="0.500517" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\menu2.png">
                         <collision-poly>
                             <point x="0.0829268" y="0.147569" />
                             <point x="0.499512" y="0.0833333" />
