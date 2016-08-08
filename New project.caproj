@@ -635,6 +635,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="1914714532867504">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7840627337339731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="7708034124730696">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1884681133698906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016_SerenityForge\NanoDoc\Assets\eyeball.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.169811" />
+                            <point x="0.5" y="0.00471698" />
+                            <point x="0.800781" y="0.240566" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.800781" y="0.759434" />
+                            <point x="0.5" y="0.995283" />
+                            <point x="0.140625" y="0.830189" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -648,8 +675,8 @@
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="5" />
-        <global-instance type="Audio" uid="59">
+        <global-instance type="Keyboard" uid="69" />
+        <global-instance type="Audio" uid="96">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -663,9 +690,9 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="UpdateHUD" uid="69" />
-        <global-instance type="Mouse" uid="96" />
-        <global-instance type="Mouse" uid="124" />
+        <global-instance type="UpdateHUD" uid="124" />
+        <global-instance type="Mouse" uid="125" />
+        <global-instance type="Mouse" uid="126" />
     </global-instances>
     <sounds-folder>
         <file name="destroy_cancer.m4a" />
@@ -692,6 +719,7 @@
         <file name="heartbeat3.ogg" />
         <file name="heartbeat4.m4a" />
         <file name="heartbeat4.ogg" />
+        <file name="success2.m4a" />
     </sounds-folder>
     <music-folder />
     <files-folder>

@@ -8,6 +8,11 @@
         <event-block sid="2091306129470413">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="9362288395240523" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="7484527265541335" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="422301635474183" type="Laser" />
@@ -348,7 +353,7 @@
             </conditions>
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="9351306861698368" type="System">
-                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                    <param id="0" name="Layout">&quot;Layout 2&quot;</param>
                 </action>
                 <action id="-21" name="Reset global variables" sid="4140867242909027" type="System" />
                 <action id="-26" name="Restart layout" sid="6615664227818576" type="System" />
@@ -364,7 +369,7 @@
             </conditions>
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="5501305245362917" type="System">
-                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                    <param id="0" name="Layout">&quot;Layout 2&quot;</param>
                 </action>
                 <action id="-21" name="Reset global variables" sid="2105698290824388" type="System" />
                 <action id="-26" name="Restart layout" sid="5543331651307439" type="System" />
@@ -531,6 +536,26 @@
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="1443745698079105" type="System">
                     <param id="0" name="Layout">&quot;Layout 3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7190132920989411">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="554484802288829" type="NumSites">
+                    <param id="0" name="Instance variable">numSites</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4010188028479701" type="Audio">
+                    <param id="0" name="Audio file">good_sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="9601325389020981" type="System">
+                    <param id="0" name="Layout">&quot;Layout 4&quot;</param>
                 </action>
             </actions>
         </event-block>

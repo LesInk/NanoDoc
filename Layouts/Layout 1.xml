@@ -1219,6 +1219,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Sprite6" uid="127">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>227</x>
+                        <y>809</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>212</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1238,28 +1260,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="125">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>210</x>
-                        <y>813</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>212</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>-0.197455719</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="BrainLines" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -3327,7 +3327,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="126">
+                <instance type="Sprite6" uid="128">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3337,15 +3337,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>299</x>
-                        <y>840</y>
+                        <x>298</x>
+                        <y>839</y>
                         <z>0</z>
                         <width>256</width>
                         <height>212</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>-0.156631574</angle>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
