@@ -330,5 +330,59 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="7897315530084767" title="WhiteBloodCells">
+            <sub-events>
+                <event-block sid="3942617542642478">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="9817630000466087" type="Ship">
+                            <param id="0" name="Object">c5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="2596566390733704" type="WhiteBloodCell">
+                            <param id="0" name="X">ship.X</param>
+                            <param id="1" name="Y">ship.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1315770878388949" type="WhiteBloodCell">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;chase&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6864259826032103">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="5913189339946612" type="Ship">
+                            <param id="0" name="Object">c5</param>
+                        </condition>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="3734007274613248" type="WhiteBloodCell">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;chase&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="312668955901224" type="WhiteBloodCell">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;circle&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3819524166980681">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9325336000592826" type="WhiteBloodCell">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;circle&quot;</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" sid="3595004800079809" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="3652164596218114" type="WhiteBloodCell">
+                            <param id="0" name="Angle">WhiteBloodCell.Angle + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
