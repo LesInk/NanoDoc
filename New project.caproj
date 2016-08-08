@@ -586,6 +586,14 @@
         <file name="heartbeat.ogg" />
         <file name="no_shot.m4a" />
         <file name="no_shot.ogg" />
+        <file name="heartbeat1.m4a" />
+        <file name="heartbeat1.ogg" />
+        <file name="heartbeat2.m4a" />
+        <file name="heartbeat2.ogg" />
+        <file name="heartbeat3.m4a" />
+        <file name="heartbeat3.ogg" />
+        <file name="heartbeat4.m4a" />
+        <file name="heartbeat4.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

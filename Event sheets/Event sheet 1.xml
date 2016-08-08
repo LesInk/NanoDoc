@@ -13,9 +13,9 @@
                 <action id="-9" name="Destroy" sid="422301635474183" type="Laser" />
                 <action id="0" name="Play" sid="751180783361592" type="Audio">
                     <param id="0" name="Audio file">heartbeat</param>
-                    <param id="2" name="Loop">1</param>
+                    <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="4113161215215243" type="UpdateHUD">
                     <param id="0" name="Name">&quot;update&quot;</param>
@@ -384,5 +384,101 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>Heartbeat Sounds</comment>
+        <event-block sid="6878097578733168">
+            <conditions>
+                <condition id="0" name="On ended" sid="7551260330024109" type="Audio">
+                    <param id="0" name="Tag">&quot;heartbeat&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="477538350337839" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">75</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7317267704778747" type="Audio">
+                    <param id="0" name="Audio file">heartbeat1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9790159872157273">
+            <conditions>
+                <condition id="0" name="On ended" sid="9896192664189376" type="Audio">
+                    <param id="0" name="Tag">&quot;heartbeat&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3143599035165168" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2915111155625107" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">75</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6125197275651196" type="Audio">
+                    <param id="0" name="Audio file">heartbeat2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4573704843980073">
+            <conditions>
+                <condition id="0" name="On ended" sid="860301692371487" type="Audio">
+                    <param id="0" name="Tag">&quot;heartbeat&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4846038636684636" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">25</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9521257989038587" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9904409368483676" type="Audio">
+                    <param id="0" name="Audio file">heartbeat3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1865175967369188">
+            <conditions>
+                <condition id="0" name="On ended" sid="5967627447682727" type="Audio">
+                    <param id="0" name="Tag">&quot;heartbeat&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1714685570088437" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1261962605737442" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3270115528445518" type="Audio">
+                    <param id="0" name="Audio file">heartbeat4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
