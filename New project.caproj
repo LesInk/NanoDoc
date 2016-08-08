@@ -285,29 +285,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="5971878149485559">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2802271606150811" speed="5">
-                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\brain2.png">
-                        <collision-poly>
-                            <point x="0.0133334" y="0.143333" />
-                            <point x="0.493333" y="0" />
-                            <point x="0.866667" y="0.133333" />
-                            <point x="0.33" y="0.0766671" />
-                            <point x="0.32" y="0.251667" />
-                            <point x="0.406667" y="0.28" />
-                            <point x="0.28" y="0.323334" />
-                            <point x="0.263334" y="0.196667" />
-                            <point x="0.0633336" y="0.181667" />
-                            <point x="0.0566669" y="0.31" />
-                            <point x="0.0566667" y="0.42" />
-                            <point x="0" y="0.386667" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite2" sid="5363056865499044">
             <plugin id="Sprite" />
             <behaviors>
@@ -540,6 +517,32 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9739025869267636" speed="5">
                     <frame duration="1" hotspotX="0.333333" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="3270009539946362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8944840377417447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BrainLines" sid="8507551115971611">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684352967906059" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016_SerenityForge\NanoDoc\Assets\brain3.png">
+                        <collision-poly>
+                            <point x="0.285156" y="0.285156" />
+                            <point x="0.5" y="0.207031" />
+                            <point x="0.714844" y="0.285156" />
+                            <point x="0.878906" y="0.5" />
+                            <point x="0.808594" y="0.808594" />
+                            <point x="0.5" y="0.792969" />
+                            <point x="0.285156" y="0.714844" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

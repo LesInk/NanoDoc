@@ -101,7 +101,7 @@
             <actions>
                 <action id="-23" name="Move at angle" sid="4333509078436286" type="Ship">
                     <param id="0" name="Angle">flow.Angle</param>
-                    <param id="1" name="Distance">1.5</param>
+                    <param id="1" name="Distance">0.8</param>
                 </action>
             </actions>
         </event-block>
@@ -119,6 +119,14 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="5021145229625434" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Value">max(0, Health.percent-1)</param>
+                </action>
+                <action id="0" name="Call function" sid="9570237192400708" type="UpdateHUD">
+                    <param id="0" name="Name">&quot;update&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
