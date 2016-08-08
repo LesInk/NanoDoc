@@ -34,6 +34,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Layout 2</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -600,11 +601,47 @@
         <object-type name="Mouse" sid="1870431461911133">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="fail" sid="8618555303675025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994052530702695" speed="5">
+                    <frame duration="1" hotspotX="0.500488" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\fail.png">
+                        <collision-poly>
+                            <point x="0.0829268" y="0.147569" />
+                            <point x="0.499512" y="0.0833333" />
+                            <point x="0.917073" y="0.147569" />
+                            <point x="0.917073" y="0.852431" />
+                            <point x="0.499512" y="0.916667" />
+                            <point x="0.0829268" y="0.852431" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="victory" sid="8715588532446383">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2360207062723641" speed="5">
+                    <frame duration="1" hotspotX="0.500488" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\victory.png">
+                        <collision-poly>
+                            <point x="0.0829268" y="0.147569" />
+                            <point x="0.499512" y="0.0833333" />
+                            <point x="0.917073" y="0.147569" />
+                            <point x="0.917073" y="0.852431" />
+                            <point x="0.499512" y="0.916667" />
+                            <point x="0.0829268" y="0.852431" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>
+        <layout>Layout 3.xml</layout>
+        <layout>Layout 4.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>

@@ -8,7 +8,7 @@
                 <condition id="6" name="On object clicked" sid="6268011736154035" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">start</param>
+                    <param id="2" name="Object clicked">startbox</param>
                 </condition>
             </conditions>
             <actions>

@@ -338,6 +338,38 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8841995866839612">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5455635613556612" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">fail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="9351306861698368" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="4140867242909027" type="System" />
+                <action id="-26" name="Restart layout" sid="6615664227818576" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="4943405175417769">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1892701302162361" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">victory</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="5501305245362917" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="2105698290824388" type="System" />
+                <action id="-26" name="Restart layout" sid="5543331651307439" type="System" />
+            </actions>
+        </event-block>
         <event-group description="" sid="7897315530084767" title="WhiteBloodCells">
             <sub-events>
                 <event-block sid="3942617542642478">
@@ -485,6 +517,20 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;heartbeat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8568532175532393">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="251377090139142" type="Health">
+                    <param id="0" name="Instance variable">percent</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="1443745698079105" type="System">
+                    <param id="0" name="Layout">&quot;Layout 3&quot;</param>
                 </action>
             </actions>
         </event-block>
