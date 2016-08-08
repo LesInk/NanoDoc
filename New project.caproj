@@ -13,12 +13,14 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -546,17 +548,54 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Start" sid="6670023157232672">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="6213992550947261">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3322358082529834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\Pictures\nanodoc\NanoDoc\start.png">
+                        <collision-poly>
+                            <point x="0.01" y="0.0666667" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.925" y="0.5" />
+                            <point x="0.925" y="0.5" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.005" y="0.966667" />
+                            <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="8175302128059634">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite6" sid="9922862892130259">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7198547613411675" speed="5">
+                    <frame duration="1" hotspotX="0.479339" hotspotY="0.510638" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="5" />
-        <global-instance type="Audio" uid="59">
+        <global-instance type="Keyboard" uid="93" />
+        <global-instance type="Audio" uid="94">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -570,7 +609,8 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="UpdateHUD" uid="69" />
+        <global-instance type="UpdateHUD" uid="95" />
+        <global-instance type="Mouse" uid="96" />
     </global-instances>
     <sounds-folder>
         <file name="destroy_cancer.m4a" />
